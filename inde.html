@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SemiCrypto – Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page">
+  <div class="card">
+    <h1 class="title">SemiCrypto</h1>
+    <p class="sub">Welcome back. Let’s begin.</p>
+
+    <button class="google-btn" onclick="googleLogin()">
+      <img src="assets/google.svg" class="icon">
+      Continue with Google
+    </button>
+
+    <div class="divider">or</div>
+
+    <input type="email" placeholder="Email Address" class="input">
+    <button class="continue">Continue</button>
+  </div>
+
+  <footer class="footer">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms</a>
+    <a href="contact.html">Contact</a>
+    <p class="msme">Registered under MSME India</p>
+  </footer>
+</div>
+
+<script>
+function googleLogin() {
+  window.location.href = "/api/auth/signin"; 
+}
+</script>
+
+</body>
+</html>

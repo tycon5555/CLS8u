@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SemiCrypto Trading Dashboard</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h1 class="logo">SemiCrypto</h1>
+    <nav>
+      <a class="active">Dashboard</a>
+      <a>Markets</a>
+      <a>Wallet</a>
+      <a>Trade</a>
+      <a>Settings</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN AREA -->
+  <main class="main">
+
+    <header class="topbar">
+      <h2>Trading Dashboard</h2>
+      <button class="profile-btn">Account</button>
+    </header>
+
+    <!-- PRICE CARDS -->
+    <section class="cards">
+
+      <div class="card">
+        <h3>Bitcoin (BTC)</h3>
+        <p class="price">$42,120</p>
+        <span class="green">+2.4%</span>
+      </div>
+
+      <div class="card">
+        <h3>Ethereum (ETH)</h3>
+        <p class="price">$2,520</p>
+        <span class="red">-1.1%</span>
+      </div>
+
+      <div class="card">
+        <h3>Solana (SOL)</h3>
+        <p class="price">$98.22</p>
+        <span class="green">+5.3%</span>
+      </div>
+
+    </section>
+
+    <!-- GRAPH + TRADE PANEL -->
+    <section class="trade-section">
+
+      <div class="chart-box">
+        <canvas id="priceChart"></canvas>
+      </div>
+
+      <div class="trade-box">
+        <h3>Trade BTC/USDT</h3>
+
+        <label>Amount</label>
+        <input type="number" placeholder="0.00 BTC">
+
+        <label>Order Type</label>
+        <select>
+          <option>Market</option>
+          <option>Limit</option>
+        </select>
+
+        <button class="buy">Buy</button>
+        <button class="sell">Sell</button>
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
